@@ -1,0 +1,75 @@
+HTML,
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(4, 5, 20);
+  overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    padding: 10px 10px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dir-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-logo{
+    width: min-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+    & img{
+        width: 100%;
+        min-width: 10em;
+    }
+}
+
+nav{
+    list-style: none;      /* remove as bolinhas */
+    padding: 0;
+    margin: 0;
+    display: flex;         /* coloca os itens em linha */
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+
+    & a{
+        text-decoration: none;
+        
+    }
+
+    & li{
+        display: inline;
+        cursor: pointer;
+        margin: 15px;
+        font-size: 1.2em;
+    }
+
+    select{
+        border: none;
+        font-size: 1.5rem;
+        width: fit-content;
+        padding-right: -20px;
+    }
+}
+
+.nav-profile svg{
+    cursor: pointer;
+}
